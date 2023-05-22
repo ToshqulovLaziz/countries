@@ -1,5 +1,6 @@
 import React from "react";
-const Home = () => {
+
+const Form = () => {
   return (
     <React.Fragment>
       
@@ -7,4 +8,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Form;

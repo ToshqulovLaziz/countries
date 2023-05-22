@@ -1,0 +1,44 @@
+.site-header {
+  padding: 23px 0;
+  background-color: var(--backgroundPrimary);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    color: #111517;
+  }
+  &__mode {
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #111517;
+  }
+}
+.app {
+    &--light {
+        background-color: var(--backgroundPrimary);
+        color: var(--colorSecondary);
+    }
+    &--dark {
+        background-color: #2B3844;
+        color: var(--colorPrimary);
+        .site-header__title {
+          color: var(--colorPrimary);
+        }
+        .site-header__mode {
+            svg {
+                fill {
+                    color: var(--colorPrimary);
+                }
+            }
+        }
+    }
+}
